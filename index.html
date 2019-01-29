@@ -1,0 +1,67 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	
+
+</head>
+<body >
+	<h1 onclick="sorte();">Sorte</h1>
+	<h1 onclick="teste();"> Exmeplo JavaScript</h1>
+
+	<div>
+		<h3>Cadastro</h3>
+		<div align="left">
+		Nome: <input type="text" name="nome" >
+		</div>
+		<br><br>
+		Data Nascimento: <input type="text" name="data" id="data" onkeyup="mask_date();" maxlength="10">
+		<br><br>
+		CEP: <input type="text" name="cep" id="cep"  maxlength="9" onkeyup="mask_cep();">
+		<br><br>
+		Telefone: <input type="phone" name="telefone" id="phone" maxlength="15" onkeyup="mask_phone();">
+		<br><br>
+		<input type="button" name="btn-submit" value="Cadastrar">
+	</div>
+
+
+	<img src="desert.jpg" width="250" height="250" id="foto" onmouseover="changePhoto1();" onmouseout="changePhoto2();">
+
+</body>
+
+
+
+<script type="text/javascript">
+
+		function sorte()
+		{
+
+			for (var i = 0; i < 10; i++) 
+			{
+				var j;
+				j = j + i;
+			}
+
+			var sorte = 30;
+			var numero = 0;
+			while(numero !=sorte)
+			{
+				numero = window.prompt('Digite o numero da sorte :');
+			}
+		}
+
+		function changePhoto1()
+		{
+			document.getElementById("foto").setAttribute("src","lighthouse.jpg");
+		}
+
+		function changePhoto2()
+		{
+			document.getElementById("foto").setAttribute("src","desert.jpg");
+		}
+
+	</script>
+<script type="text/javascript" src="funcoes.js"></script>
+
+</html>
